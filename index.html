@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="./img/img1.png">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quasi eos illum iste, est maiores vel nulla veritatis facere, debitis, nobis beatae repudiandae magni suscipit. Ex laudantium assumenda distinctio deserunt laboriosam? Nesciunt, aliquam libero laudantium sint dicta a, excepturi exercitationem veniam ad voluptatum est reiciendis harum expedita quibusdam obcaecati culpa alias minus perspiciatis optio neque distinctio velit! Facilis, quod dolor.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./img/img2.png">
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at voluptatem maiores, quos veritatis distinctio ea iure incidunt enim amet alias, sed quae repudiandae in perferendis repellat, ipsum minima! Alias dignissimos, cupiditate repellat molestias amet eius deserunt beatae provident exercitationem ipsam culpa. Omnis, consequatur error.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./img/img3.png">
+            </div>
+            <div class="content">
+                <h3>Marketing & Communication</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam sunt quos recusandae cupiditate obcaecati fuga aliquid! Ratione, deserunt sit accusamus eaque repellat dignissimos sed enim id porro numquam optio nam non aliquam nemo libero laborum quaerat. Optio ipsa aspernatur, beatae minus officiis laborum at tempore sapiente blanditiis inventore error quas vitae cum architecto earum voluptate mollitia dolorem corrupti animi sint ipsum hic incidunt! Commodi.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0; i<more.length; i++){
+            more[i].addEventListener('click', function(){
+                more[i].parentNode.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
